@@ -1,83 +1,93 @@
-# Python Automation Framework
+# GitHub MLOps Lab: Automation and Testing Framework
 
-A robust Python development project showcasing software engineering excellence and automation. This repository implements modular logic scaled with clean code practices, rigorous edge-case validation using Pytest, and a seamless GitHub Actions CI pipeline for reliable, high-integrity development workflows.
+A specialized GitHub Lab project focused on establishing professional software engineering foundations within an MLOps lifecycle. This repository demonstrates a complete automation workflow, from environment configuration to continuous integration on GitHub.
 
 ---
 
-## Overview
+## Lab Objectives
 
-This standalone project serves as a foundational template for high-quality Python development. It demonstrates how to structure, test, and automate a Python codebase using industry-standard tools and practices.
+This lab focuses on five core modules essential for professional DevOps and MLOps workflows:
 
-## Project Technology Stack
+1. **Virtual Environment Management**: Establishing isolated Python environments for reproducible development.
+2. **GitHub Repository Architecture**: Structuring a modular repository for scalability and version control.
+3. **Python Source Implementation**: Developing clean, type-hinted, and modular Python modules.
+4. **Multi-Framework Testing**: Implementing comprehensive validation using both **Pytest** and **Unittest** frameworks.
+5. **GitHub Actions Automation**: Orchestrating automated CI/CD pipelines for high-integrity delivery.
 
-- Language: Python 3.10+
-- Testing Framework: Pytest
-- Automation: GitHub Actions
-- Dependency Management: pip (requirements.txt)
+---
 
-## Key Enhancements and Engineering Practices
+## Technology Stack
 
-This project improves upon standard introductory labs by implementing the following professional standards:
+- **Platform**: GitHub
+- **Language**: Python 3.10+
+- **Testing**: Pytest and Unittest
+- **Automation**: GitHub Actions
+- **Dependency Tracking**: Requirements.txt
+
+## Key Enhancements
 
 ### 1. Refactored Modular Logic
-- Descriptive Naming: Explicit function names (e.g., add, subtract, multiply, divide, power) replace generic identifiers for improved readability and intent.
-- Type Hinting: Full implementation of PEP 484 type hints for improved static analysis, better IDE support, and codebase durability.
-- Robust Error Handling: Specific validation for numeric inputs and dedicated handling for mathematical edge cases such as division by zero.
+- **Descriptive Naming**: Intent-revealing function names (e.g., add, subtract, divide) for improved maintainability.
+- **Type Hinting**: PEP 484 implementation for robust static analysis.
+- **Error Handling**: Specialized validation for mathematical edge cases.
 
-### 2. Comprehensive Quality Assurance
-- Advanced Edge Case Coverage: Detailed test scenarios for negative numbers, zero-valued inputs, and non-numeric type validation.
-- Standardized Test Architecture: Organized test structure using package markers to ensure discoverability and scalability.
+### 2. Dual-Framework Validation
+- **Pytest**: Industry-standard, feature-rich testing.
+- **Unittest**: Python's native testing framework, ensuring full compatibility and broad skill demonstration.
 
-### 3. Enhanced CI/CD
-- GitHub Actions Integration: Continuous integration workflow triggered on every commit to ensure code integrity.
-- Production-Ready Environments: Automated environment configuration and test execution within containerized Ubuntu runners.
+### 3. Automated CI Pipeline
+- **Continuous Integration**: Automated test execution on every GitHub push event.
+- **Environment Isolation**: Consistent verification across containerized Ubuntu runners.
 
 ## Project Structure
 
 ```text
 ├── .github/workflows/
-│   └── ci.yml             # CI pipeline configuration
+│   └── ci.yml             # GitHub Actions automation
 ├── src/
-│   ├── __init__.py        # Package marker
-│   └── calculator.py      # Core logic with enhancements
+│   ├── __init__.py        # Package initialization
+│   └── calculator.py      # Core modular logic
 ├── tests/
 │   ├── __init__.py        # Test package marker
-│   └── test_calculator.py # Comprehensive Pytest suite
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation
+│   ├── test_calculator.py # Pytest implementation
+│   └── test_unittest.py   # Unittest implementation
+├── requirements.txt       # Dependency management
+└── README.md              # Documentation
 ```
 
-## Installation and Usage
+## Installation and Execution
 
 ### Setup
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/himabindu-peramala/mlops_github_labs.git
    cd mlops_github_labs
    ```
 
-2. Create and activate a virtual environment:
+2. Configure virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate
    ```
 
-3. Install dependencies:
+3. Install requirements:
    ```bash
    pip install -r requirements.txt
    ```
 
 ### Running Tests
-Execute the test suite locally to verify code integrity:
+Execute both testing frameworks:
+
+**Pytest:**
 ```bash
 pytest
 ```
 
-## Contribution
-
-This repository is a standalone professional showcase. It is designed to be easily extensible for additional mathematical operations, linting stages, or advanced CI/CD workflows.
+**Unittest:**
+```bash
+python -m unittest tests/test_unittest.py
+```
 
 ---
 
-*Built for Engineering Excellence and Automation.*
+*Focusing on Engineering Excellence and GitHub Automation.*
